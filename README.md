@@ -1,32 +1,42 @@
-# 🎓 Result Manager
+<div align="center">
 
-A simple, lightweight Java console application designed to manage student records, compute academic performance metrics, identify the top-performing student, and calculate the overall class average.
+# 🎓 RESULT MANAGER
+### *A Clean, Object-Oriented Java Performance Tracker*
 
----
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
+[![GitHub repo size](https://img.shields.io/github/repo-size/mdzihadhossain-coder/Result_Manager?style=for-the-badge&color=brightgreen)](https://github.com/mdzihadhossain-coder)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)]()
 
-## 🚀 Features
+<p align="center">
+  A streamlined console application engineered in Java to record academic records, display formatted rosters, track class toppers, and compute statistical aggregates in real-time.
+</p>
 
-- **Dynamic Data Collection**: Accepts console input for student names, IDs, and marks.
-- **Batch Processing**: Stores and organizes student records inside an array of objects.
-- **Detailed Report**: Neatly displays the full roster of students with their formatted details.
-- **Topper Identification**: Accurately tracks and highlights the student with the highest score.
-- **Class Analytics**: Calculates and displays the overall average score for the entire class.
-
----
-
-## 🛠️ Built With
-
-- **Language**: Java
-- **Input Handling**: `java.util.Scanner`
-- **Paradigm**: Object-Oriented Programming (OOP)
+[Key Features](#-key-features) • [System Architecture](#-system-architecture) • [Getting Started](#-getting-started) • [Terminal Preview](#-terminal-preview)
 
 ---
 
-## 📂 Project Structure
+</div>
+
+## ✨ Key Features
+
+| Feature | Description | Status |
+| :--- | :--- | :---: |
+| 📋 **Interactive Data Ingestion** | Dynamic console scanning with buffer handling for seamless multi-line inputs. | `Done` |
+| 🗃️ **OOP Domain Model** | Modular `Student` object structure keeping data and display logic clean. | `Done` |
+| 🏆 **Topper Identification Engine** | Single-pass $O(N)$ comparison algorithm to identify highest rank. | `Done` |
+| 📊 **Batch Analytics** | Automated total tally and precise class average calculation. | `Done` |
+
+---
+
+## 🏛️ System Architecture
 
 ```text
-Result-Manager/
-├── src/
-│   ├── Main.java       # Execution logic, input/output, and mark calculations
-│   └── Student.java    # Student entity class (attributes and display method)
-└── README.md
+Result_Manager/
+│
+├── 📁 src/
+│   ├── 📄 Main.java          # Core controller: execution loop, scanners & calculations
+│   └── 📄 Student.java       # Entity class: fields (name, id, mark) & display methods
+│
+├── 📄 .gitignore             # Standard IDE and bytecode filters
+└── 📄 README.md              # Project documentation
